@@ -2,8 +2,8 @@
 [The problem is stated as a Technical Test. The requirement is attached at the end of this document.]
 
 # This project created using the boilerplate [The Minimal React Webpack Babel Setup]
-# (https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
-# Added ESLint
+(https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
+Added ESLint
 
 # Install and running
 - Install: npm install
