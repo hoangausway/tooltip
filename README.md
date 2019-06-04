@@ -1,7 +1,7 @@
 # Goal: build a solution for adding tooltip to react components
 [The problem is stated as a Technical Test. The requirement is attached at the end of this document.]
 
-# This project created using the boilerplate [The Minimal React Webpack Babel Setup]
+This project created using the boilerplate [The Minimal React Webpack Babel Setup]
 (https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
 Added ESLint
 
