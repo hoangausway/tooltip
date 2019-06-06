@@ -34,7 +34,7 @@ Added ESLint
       )  
   }
 
-  - in dist/index.html, add  
+- in dist/index.html, add  
       ```<div id="modal-root"></div>```  
     The div "modal-root" is the container where the tooltip portals will be attached
 
