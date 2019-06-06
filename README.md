@@ -59,19 +59,19 @@ Added ESLint
 
 # Cross-browser Test
 Completed limited tests on
-- MacOS 10.13
-Safari 11.0.2
+- MacOS 10.13  
+Safari 11.0.2  
 Chrome Version 74.0.3729.169
 
-- iOS real devices
-iPhone 6s, iOS 12.2
-iPad Mini, iOS 12.2
-iPad Pro, iOS 12.1
+- iOS real devices  
+iPhone 6s, iOS 12.2  
+iPad Mini, iOS 12.2  
+iPad Pro, iOS 12.1  
 
-- iOS Simulator
+- iOS Simulator  
 iPhone 6s, iOS 9.3
 
-- IE 11
+- IE 11  
 Used User Agent IE 11 from Safari
 
 # Known problems
