@@ -15,10 +15,10 @@ Added ESLint
   Ex: const [tipRef, Tip] = useTooltipEffect();
 
 - add property ref={tipRef} to a trigger component/element waiting for tip  
-  Ex: <div ref={tipRef}>some contents</div>
+  Ex: ```html<div ref={tipRef}>some contents</div>```
 
 - add a component Tip (next to the above trigger or anywhere in component codes)  
-  Ex: <Tip>tip's contents/children</Tip>
+  Ex: ```html<Tip>tip's contents/children</Tip>```
 
   const SomeComponent = (props) => {
     ...
@@ -35,7 +35,7 @@ Added ESLint
   }
 
   - in dist/index.html, add  
-      <div id="modal-root"></div>  
+      ```html<div id="modal-root"></div>```
     The div "modal-root" is the container where the tooltip portals will be attached
 
 
