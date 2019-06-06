@@ -72,10 +72,10 @@ const bestSide = (targetRect, tipSize, winSize) => {
 
   // return available and preferable side; very specific with definitons of sides = ['bottom', 'top', 'right', 'left'];
   const choices = [];
-  choices["bottom"] = H - targetRect.top - targetRect.height - gap - tipSize.height;
   choices["top"] = targetRect.top - gap - tipSize.height - buf;
-  choices["right"] = W - targetRect.left - targetRect.width - gap - tipSize.width;
+  choices["bottom"] = H - targetRect.top - targetRect.height - gap - tipSize.height;
   choices["left"] = targetRect.left - gap - tipSize.width - buf;
+  choices["right"] = W - targetRect.left - targetRect.width - gap - tipSize.width;
 
   // for loop: test starting from most preferable side descending
   for (let i = 0; i < 4; i++) {
