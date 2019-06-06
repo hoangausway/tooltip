@@ -23,7 +23,7 @@ const buf = 10; // buffer from window edges
   [Assumption 1]:
     Preferability is descending along the array. First in array sides is most preferable.
 */
-export const sides = ["bottom", "top", "right", "left"];
+export const sides = ["top", "bottom", "left", "right"];
 
 /*
   Points are used for positioning tip's arrow: 
@@ -46,10 +46,10 @@ export const calculatePosition = (targetRect, tipSize, winSize) => {
   if (!side) return null;
 
   const positionings = {
-    bottom: bottomPositioning,
     top: topPositioning,
-    right: rightPositioning,
-    left: leftPositioning
+    bottom: bottomPositioning,
+    left: leftPositioning,
+    right: rightPositioning
   };
   return positionings[side](targetRect, tipSize, winSize);
 };
@@ -72,20 +72,16 @@ const bestSide = (targetRect, tipSize, winSize) => {
 
   // return available and preferable side; very specific with definitons of sides = ['bottom', 'top', 'right', 'left'];
   const choices = [];
-  if (
-    (choices[sides[0]] =
-      H - targetRect.top - targetRect.height - gap - tipSize.height > 0)
-  )
-    return sides[0]; // bottom is OK
-  if ((choices[sides[1]] = targetRect.top - gap - tipSize.height - buf > 0))
-    return sides[1]; // top is OK
-  if (
-    (choices[sides[2]] =
-      W - targetRect.left - targetRect.width - gap - tipSize.width > 0)
-  )
-    return sides[2]; // right is OK
-  if ((choices[sides[3]] = targetRect.left - gap - tipSize.width - buf > 0))
-    return sides[3]; // left is OK
+  choices["bottom"] = H - targetRect.top - targetRect.height - gap - tipSize.height;
+  choices["top"] = targetRect.top - gap - tipSize.height - buf;
+  choices["right"] = W - targetRect.left - targetRect.width - gap - tipSize.width;
+  choices["left"] = targetRect.left - gap - tipSize.width - buf;
+
+  // for loop: test starting from most preferable side descending
+  for (let i = 0; i < 4; i++) {
+    if (choices[sides[i]] > 0)
+      return sides[i];
+  }
 
   return null;
 };
