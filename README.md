@@ -51,7 +51,7 @@ Added ESLint
 - ReactDOM.createPortal: Portals provide a way to render children into a DOM node that exists outside the DOM hierarchy of the parent component. We use it to create tooltip component.
 
 #User-defined hooks:
-- useTouchOutsideEffect: fired if user tap or click mouse outside of tooltip
+- useTouchOutsideEffect: fired if user taps or clicks mouse outside of tooltip
 - useEventListenerEffect: fired on common events
 
 #DOM
