@@ -5,6 +5,10 @@ This project created using the boilerplate [The Minimal React Webpack Babel Setu
 (https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
 Added ESLint
 
+# Dependencies:
+- React Hooks (official release in version 16.8, March 2019)
+- styled-components
+
 # Install and running
 - Install: npm install
 - Run: npm start
@@ -39,10 +43,6 @@ Added ESLint
     The div "modal-root" is the container where the tooltip portals will be attached
 
 
-# Dependencies:
-- React Hooks (official release in version 16.8, March 2019)
-- styled-components
-
 # Essential functions/techniques used
 #React
 - React.useLayoutEffect
@@ -71,7 +71,8 @@ iPad Pro, iOS 12.1
 - iOS Simulator  
 iPhone 6s, iOS 9.3
 
-- IE 11  
+- IE 11
+Lenovo, IE11
 Used User Agent IE 11 from Safari
 
 # Known problems
@@ -81,23 +82,7 @@ Or the getBoundingClientRect was not properly used.
 Note that, it's worked well with zooming in tested browsers in desktop.]
 
 
-#[Technical Test Requirement]
-We would like you to complete a small exercise to get a better understanding of your coding standards. It has been designed in such a way that will take at most 1 hour given your capability and is not intended to destroy anyone's weekend either. 
-
-Build a Tooltip component (React or Preact)
-·  Free to use any tools required at your disposable
-·  Would be good to include some linting tools like eslint and stylelint etc.
-·  No tests are required due to the timing constraint
-·  Keep the code clean, concise, elegant, robust and efficient as possible
-·  Please also take accessibility into consideration if time allows it
-·  Minimum browser support, IE11+, iOS 9+
-
-Specs:
+# Specs
 ·  On a client without a mouse, the tooltip should be activated on tap only, it can be deactivated on scroll or tapping outside of the tooltip
 ·  On a client with a mouse, the tooltip should be activated onMouseOver and deactivated onMouseLeave, also it should deactivate on scroll and resize
 ·  Should support detecting the bounds, e.g. if the tooltip is displayed on left, the tail should correspond to it, see example below. A good idea to demo it displaying in corners and top, right, bottom, left bounds.
-
-Screen Shot 2019-04-05 at 9.27.59 am.png
-
-Please note this is to show how it looks like, ideally no more than one tooltip should be displayed at one time. 
-Hope you find this exercise interesting, please let me know if need any clarification. However if not mentioned it is open-ended and you are free to interpret at your discretion.
