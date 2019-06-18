@@ -1,5 +1,5 @@
 # Goal: build a solution for adding tooltip to react components
-[The problem is stated as a Technical Test. The requirement is attached at the end of this document.]
+[Short specs is attached at the end of this document.]
 
 This project created using the boilerplate [The Minimal React Webpack Babel Setup]
 (https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
@@ -83,6 +83,6 @@ Note that, it's worked well with zooming in tested browsers in desktop.]
 
 
 # Specs
-·  On a client without a mouse, the tooltip should be activated on tap only, it can be deactivated on scroll or tapping outside of the tooltip
-·  On a client with a mouse, the tooltip should be activated onMouseOver and deactivated onMouseLeave, also it should deactivate on scroll and resize
-·  Should support detecting the bounds, e.g. if the tooltip is displayed on left, the tail should correspond to it, see example below. A good idea to demo it displaying in corners and top, right, bottom, left bounds.
+- On a client without a mouse, the tooltip should be activated on tap only, it can be deactivated on scroll or tapping outside of the tooltip
+- On a client with a mouse, the tooltip should be activated onMouseOver and deactivated onMouseLeave, also it should deactivate on scroll and resize
+- Should support detecting the bounds, e.g. if the tooltip is displayed on left, the tail should correspond to it, see example below. A good idea to demo it displaying in corners and top, right, bottom, left bounds.
